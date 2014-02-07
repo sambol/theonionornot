@@ -8,6 +8,7 @@
     "xml2js": "~0.4.1",
     "request": "~2.33.0",
     "async": "~0.2.10",
-    "handson-reddit": "0.0.0"
+    "handson-reddit": "0.0.0",
+    "express": "~3.4.8"
   }
 }
