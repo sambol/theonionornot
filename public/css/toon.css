@@ -1,0 +1,11 @@
+body {
+  background-color: #27ae60;
+}
+.logo img {
+  margin:0 auto; 
+  height:120px;
+}
+.header {
+  width:100%;
+  border-bottom:solid 7px #fafafa;
+}

@@ -3,9 +3,17 @@ var app = express();
 var getter = require("./get/get");
 app.use(express.static(__dirname + '/public'));
 var links = {};
-getter(function(linkobj){
-  links = linkobj;
-});
+
+function updateLinks(){
+  getter(function(linkobj){
+    links = linkobj;
+  });
+}
+
+setInterval(updateLinks, 1000 * 60 * 30);
+updateLinks();
+
+
 function getLinks(callback){
   var linkList = [];
   function addItem(item, type){
